@@ -41,7 +41,7 @@ item_6 = 15 ;
 //20. Присвоить переменной item_6_type тип переменной item_6
 item_6_type = typeof item_6;
 //21. Вывести в консоль тип данных item_6 в виде ——  “item_6 == ”  item_6,  “item_6_type == ”  item_6_type ——  
-console.log('item_6 == ' + typeof item_6 + ', ' + 'item_6_type == '+ typeof item_6_type);
+console.log('item_6 == ' + item_6 + ', ' + 'item_6_type == '+ typeof item_6_type);
 //22. Создать переменную item_7 и в ней преобразовать item_6 в String.
 let item_7 = String(item_6)
 //23. Создать переменную item_7_type
