@@ -4,3 +4,14 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
+
+let n = 2 
+let nn = ' ' + n + '' + n + ' '
+let nnn = n + '' + n + '' + n
+let result = Number(n + nn + nnn)
+
+console.log(result)
+
+
+
+
