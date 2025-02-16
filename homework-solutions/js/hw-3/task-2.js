@@ -6,11 +6,11 @@ n + nn + nnn, где n не перемножаются, а конкатенир�
 */
 
 let n = 2 
-let nn = ' ' + n + '' + n + ' '
-let nnn = n + '' + n + '' + n
+let nn = n + '' + n;
+let nnn = n + '' + n + '' + n;
 let result = Number(n + nn + nnn)
 
-console.log(result)
+console.log(result);
 
 
 
