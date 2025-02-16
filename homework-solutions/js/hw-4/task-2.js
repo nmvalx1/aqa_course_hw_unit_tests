@@ -14,3 +14,43 @@
   5. Проверить задание со следующими значениями в переменной age: 10, 17, 18, 19, 59, 60, 61
 
   */
+
+const minAge = 18;
+const maxAge = 60;
+  
+  let age = 10;
+  const typeOfAge = Number(age);
+
+if (age < minAge ) 
+{ 
+  if (typeof typeOfAge !== typeof age) 
+  {
+  console.log('Incorrect data type')
+  }
+  console.log("You don't have access cause your age is " + age + " It's less then 18")
+}
+else if (age >= minAge && age < maxAge) 
+{
+  if (typeof typeOfAge !== typeof age) 
+  {
+  console.log('Incorrect data type');
+  }
+  console.log("Welcome !")
+}
+else if (age >= maxAge) 
+{
+  if (typeof typeOfAge !== typeof age) 
+  {
+  console.log('Incorrect data type')
+  }
+  console.log("Keep calm and look Culture channel")
+} 
+else {
+  if (typeof typeOfAge !== typeof age) 
+   {
+    console.log('Incorrect data type')
+  }
+  console.log("Technical work")
+};
+
+ 
