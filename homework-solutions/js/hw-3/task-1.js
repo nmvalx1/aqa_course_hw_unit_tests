@@ -49,5 +49,5 @@ let item_7_type
 //24. Присвоить переменной item_7_type тип переменной item_7
 item_7_type = typeof item_7
 //25. Вывести в консоль тип данных item_7 в виде ——  “item_7 == ”  item_7,  “item_7_type == ”  item_7_type ——  
-console.log("item_7 == "+ typeof item_7 + ',' + 'item_7_type ==' + typeof item_7_type);
+console.log("item_7 == "+ item_7 + ',' + 'item_7_type ==' + item_7_type);
 
