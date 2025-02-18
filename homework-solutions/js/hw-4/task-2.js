@@ -35,5 +35,5 @@ if (typeof age !== 'number') {
 } else {
   console.log('Technical work');
 }
-
+}
  
