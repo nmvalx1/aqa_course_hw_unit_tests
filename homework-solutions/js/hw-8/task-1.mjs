@@ -32,7 +32,7 @@ return element > pastValue
 });
 
 let find = numbers.find(function(el,i) {
-if(el === i) return i
+return el === i
 });
 
 let sort = numbers.sort((a,b) => a - b )
