@@ -13,9 +13,7 @@
 
 //1 :
 function delayTwoSeconds(callback) {
-  setTimeout(() => {
-    callback();
-  }, 2000);
+setTimeout(callback, 2000);
 }
 
 delayTwoSeconds(() => console.log(`Hello world after 2 sec`));
