@@ -43,4 +43,3 @@ function validatePassword(pass:string): boolean {
       [...trimmed].some((char) => pattern.includes(char))
   );
 }
-console.log(validatePassword('AlekseyNaumov'));
