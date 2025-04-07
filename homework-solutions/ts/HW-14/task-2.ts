@@ -5,3 +5,15 @@
 //    где каждый каждый элемент - это элемент исходного массива умноженный на его индекс
 //    Пример:
 //    map([1,2,3,4,5], callback) => [0,2,6,12,20]
+
+function customMap<T,J> (array: T[] , callback:(el:T,indx:number) => J): J[] { 
+const newArray: J[] = [];
+
+for(let i = 0 ; i < array.length; i++){
+newArray.push(callback(array[i],i))
+}
+return newArray
+}
+
+console.log(customMap([1,2,3,4,5],((el,indx) => el * indx)));
+

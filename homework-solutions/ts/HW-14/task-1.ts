@@ -23,3 +23,52 @@
 
 //     console.log(getLastItem([1, 2, 3, 4])); // 4
 //     console.log(getLastItem(['a', 'b', 'c'])); // 'c'
+
+//1:
+interface IEmployee {
+  name: string;
+  salary: number;
+  isManager: boolean;
+}
+
+const QA: IEmployee = {
+  name: 'Alex',
+  salary: 5000,
+  isManager: false,
+};
+//2:
+type EmployeeKeys = keyof IEmployee;
+
+//3:
+type QaKeys = keyof typeof QA;
+//4:
+type UserType = typeof QA;
+
+//5:
+type optionalIEmployee = Partial<IEmployee>;
+
+//6:
+type namesalaryIEmployee = Pick<IEmployee, 'name' | 'salary'>;
+
+//7:
+type omitIEmployee = Omit<IEmployee, 'isManager'>;
+
+//8:
+type readonlyIEmployee = Readonly<IEmployee>;
+
+//9:
+
+type recordType = Record<'string', QaKeys>;
+
+//10:
+function wrapInArray<T>(value: T): T[] {
+  return [value];
+}
+
+// console.log(wrapInArray('TypeScript'));
+//11 : 
+    function getLastItem<T>(array: T[]): T {
+    return array[array.length -1]
+    }
+
+ 
