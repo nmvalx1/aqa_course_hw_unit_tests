@@ -68,7 +68,10 @@ function wrapInArray<T>(value: T): T[] {
 // console.log(wrapInArray('TypeScript'));
 //11 : 
     function getLastItem<T>(array: T[]): T {
-    return array[array.length -1]
-    }
+    if(array.length !== 0) return array[array.length - 1]
+    else throw new Error ('Array length can\'t be empty')
+  }
+
+ console.log(getLastItem([]))
 
  
