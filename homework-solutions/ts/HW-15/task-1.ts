@@ -37,7 +37,7 @@ abstract class Vehicle implements IVehicle {
 //3
 class Car extends Vehicle {
   constructor(
-    public make: string,
+   make: string,
     public model: string,
     public year: number,
   ) {
